@@ -1,0 +1,152 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&family=Zen+Dots&display=swap");
+
+/* Variables */
+
+:root{
+  --body-bg-color: #BBC8BA;
+  --nav-footer-bg-color: #4d4fe080;
+  --text-color: black;
+}
+
+/* End Variables */
+
+/* General */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+  margin: 0px;
+  padding: 0px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.black-a{
+  color: var(--text-color);
+  text-decoration: none;
+  transition: 500ms;
+}
+
+.black-a:hover{
+  color: rgb(105, 105, 105);
+  text-decoration: underline;
+}
+
+.button-transition{
+  transition: 600ms;
+}
+
+.my-label{
+  font-size: 15px;
+}
+
+.fa-eye,
+.fa-eye-slash{
+  user-select: none;
+}
+
+/* End General */
+
+
+/* Navbar */
+
+.nav-color,
+.footer-color{
+  background-color: var(--nav-footer-bg-color);
+}
+
+.navbar-brand {
+  font-family: "Zen Dots", cursive;
+}
+
+.fa-home,
+.fa-user {
+  color: rgb(216, 102, 102);
+}
+
+.fa-sign-in-alt,
+.fa-check-circle,
+.fa-tasks {
+  color: rgb(71, 221, 231);
+}
+
+.fa-sign-out-alt{
+  color: rgb(189, 255, 91);
+}
+
+/* End Navbar */
+
+/* Task */
+
+.task-textarea {
+  max-height: 300px;
+}
+
+.task-card-header{
+  height: 45px;
+}
+
+.task-card-body{
+  height: 130px;
+}
+
+.task-name{
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.task-description{
+  font-size: 15px;
+  margin: 0px;
+}
+
+/* End Task */
+
+
+/* Register */
+form#register_form p{
+  font-size: 12px;
+}
+
+
+/* Profile */
+.profile_row_bg{
+  background-color: rgba(168, 168, 168, 0.3);
+}
+
+
+/* Footer */
+.footer-brand,
+.footer-copy {
+  font-family: "Zen Dots", cursive;
+}
+
+/* End Footer */
+
+/* Responsive */
+
+@media screen and (max-width: 1198px){
+  .task-card-header{
+    height: 70px;
+  }
+  
+  .task-card-body{
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .task-card-header{
+    height: 45px;
+  }
+  
+  .task-card-body{
+    height: 130px;
+  }
+}
